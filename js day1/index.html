@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <form onsubmit="fnValidateSignUpForm(event)">
+        <div class="inputf">
+            <div class="bord">
+                <div class="in 1">
+                    <label for="">First Name:</label>
+                    <input type="text" value="" name="fname">
+                    <span class="error fname-empty">This field is empty</span>
+                    <span class="error fname-invalid">This field should contain at least 5 characters </span>           
+                    <br>
+                </div>
+                <div class="in 2">
+                    <label for="">Last Name:</label>
+                    <input type="text" value="" name="lname">
+                    <span class="error lname-empty">This field is empty</span>
+                    <span class="error lname-invalid">This field should contain at least 5 characters </span>
+                    <br>
+                </div>
+                <div class="in 3">
+                    <label for="">Email:</label>
+                    <input type="text" value="" name="email">
+                    <span class="error email-empty">This field is empty</span>
+                    <span class="error email-invalid">Invalid email</span>
+                    <br>
+                </div>
+                <div class="in 4">
+                    <label for="">Password:</label>
+                    <input type="password" value="" name="password">
+                    <span class="error password-empty">This field is empty</span>
+                    <span class="error password-invalid">This field should contain at least 8 characters </span>
+                    <br>
+                </div>
+                <div class="in 5">
+                    <label for="">Confirm Password:</label>
+                    <input type="password" value="" name="confirmPassword">
+                    <span class="error cpassword-empty">This field is empty</span>
+                    <span class="error cpassword-invalid">Password doesn't match</span>
+                    <br>
+                </div>
+                <div class="in 6">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
